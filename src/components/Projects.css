@@ -1,0 +1,124 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 5%;
+  gap: 3rem;
+  width: 100%;
+
+  margin: 0px;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #00FFFF, #00A3FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 163, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid rgba(0, 163, 255, 0.2);
+}
+
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 163, 255, 0.4);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:#00FFFF;
+  text-decoration: underline;
+}
+
+.project-card p {
+  font-size: 1.05rem;
+  color: ghostwhite;
+  line-height: 1.5rem;
+}
+
+.pro-links{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  
+}
+.pro-links a{
+  padding-top: 40px;
+  font-weight: bold;
+  filter: brightness(20);
+  color:#00A3FF;
+}
+.casestudy{
+   margin-top: 1.5rem;
+  background: linear-gradient(135deg, #00FFFF, #00A3FF);
+  color: darkgreen;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 163, 255, 0.5);
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  color: #00FFFF;
+}
+
+
+@media screen and (max-width: 768px) {
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  .project-card a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

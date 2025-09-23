@@ -1,0 +1,22 @@
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.animate-on-scroll.visible {
+  animation: slideUp 0.8s ease-out forwards;
+  animation-delay: 0.2s; 
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

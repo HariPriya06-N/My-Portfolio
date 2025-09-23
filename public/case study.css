@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  color: #e0e0e0;
+  background-image: url('/bgimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2rem 5%;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #00FFFF, #00A3FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid rgba(0, 163, 255, 0.4);
+  padding-bottom: 0.5rem;
+}
+
+strong {
+  color: #ffffff;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  line-height: 1.6rem;
+  padding: 0;
+}
+
+p {
+  padding-bottom: 15px;
+}
+
+h3 ul, p ol {
+  margin: 1rem 0 1rem 2rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  list-style-position: outside;
+  color: #ffffff;
+}
+
+ul {
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+
+em {
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  color: #00A3FF;
+  border-radius: 50px;
+  border: 2px solid #00A3FF;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: linear-gradient(135deg, #00FFFF, #00A3FF);
+  color: #111;
+  box-shadow: 0 8px 20px rgba(0, 163, 255, 0.5);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
