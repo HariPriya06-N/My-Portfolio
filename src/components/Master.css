@@ -3,6 +3,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
+   background-image: url('/bgimage.png');
   font-family: 'Roboto', sans-serif;
   color: var(--text-main);
   line-height: 1.7;
