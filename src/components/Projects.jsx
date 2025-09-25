@@ -20,7 +20,7 @@ const Projects = () => {
       name: "Portfolio Website",
       description: "Personal portfolio website to showcase skills and projects.",
       techStack: "React.js, HTML5, CSS3, Netlify",
-      link: "#",
+      link: "https://hari-priya-portfolio1.netlify.app/",
       caseStudyPath:"/portfolio"
     },
     {
