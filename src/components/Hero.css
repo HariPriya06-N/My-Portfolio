@@ -133,7 +133,7 @@ padding-left: 15px;
 }
 @keyframes typing {
   from { width: 0 }
-  to { width: 80.1% }
+  to { width: 77% }
 }
 
 @keyframes blink {
@@ -183,7 +183,7 @@ padding-left: 15px;
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width:450px)and (max-width: 480px) {
   nav{
     display: flex;
     gap:1rem;
@@ -191,16 +191,17 @@ padding-left: 15px;
     padding-left: 0%;
   }
   .hero-content h1 {
-    text-align: center;
-    margin-left: 10px;
-    font-size: 2.2rem;
+    text-align: left;
+    font-size: 2.5rem;
+    padding-left: 1.7rem;
   }
 
   .hero-content h2 {
-    text-align: center;
-     margin-left: 10px;
-    font-size: 1.2rem;
+    text-align: left;
+     margin-left: 0.8rem;
+    font-size: 1.4rem;
     width: 100%;
+    animation: none;
   }
 
   .hero-content p {
@@ -228,6 +229,60 @@ padding-left: 15px;
     font-size: 0.85rem;
     padding: 0 6px;
   }
+  
 }
+
+@media screen and (min-width: 360px) and (max-width: 445px) {
+ 
+  nav {
+    gap: 1.5rem;
+    padding-left:0.5rem;
+    justify-content: flex-end;
+    font-size: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+    text-align: left;
+    animation: none;
+    width: 100%;
+    padding-left: 1.1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-left: 5px;
+    max-width: 95%;
+  }
+
+  .res-view {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-img {
+    width: 90%;
+    max-height: 55vh;
+    margin: 0 auto;
+  }
+
+  .social-links1 {
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .social-links1 a {
+    font-size: 0.8rem;
+    padding: 0 5px;
+  }
+}
+
 
 
