@@ -6,14 +6,14 @@ const Projects = () => {
       name: "E-Commerce Website",
       description: "A full-stack e-commerce web application with product management, cart, and checkout features.",
       techStack: "Java, Spring Boot, React.js, MySQL",
-      link: "#", 
+      link: "https://ecommerce-frontend-haripriya.netlify.app/", 
       caseStudyPath:"/CaseStudyEcommerce"
     },
     {
       name: "Expense Tracker",
       description: "A web application to track daily expenses, categorize spending, and visualize monthly budgets.",
       techStack: "Java, Spring Boot, React.js, MySQL",
-      link: "#", 
+      link: "https://expense-tracker-haripriya.netlify.app/", 
       caseStudyPath:"/expense"
     },
     {
