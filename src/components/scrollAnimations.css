@@ -6,7 +6,7 @@
 
 .animate-on-scroll.visible {
   animation: slideUp 0.8s ease-out forwards;
-  animation-delay: 0.2s; 
+  animation-delay: 0.1.5s; 
 }
 
 @keyframes slideUp {
